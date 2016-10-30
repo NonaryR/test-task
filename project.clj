@@ -10,8 +10,7 @@
                  [cheshire "5.6.3"]
                  [korma "0.4.0"]
                  [hiccup "1.0.5"]
-                 [ring/ring-jetty-adapter "1.5.0" :exclusions [ring/ring-core]]
-                 ]
+                 [ring/ring-jetty-adapter "1.5.0" :exclusions [ring/ring-core]]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler test-task.handler/app}
   :profiles
