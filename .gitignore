@@ -8,7 +8,6 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-README.md
 /resources
 /target
 untitled.md

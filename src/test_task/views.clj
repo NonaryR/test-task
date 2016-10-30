@@ -6,7 +6,7 @@
 (defn gen-page-head
   [title]
   [:head
-   [:title (str "Locations: " title)]
+   [:title (str "Items: " title)]
    (hic-p/include-css "/css/styles.css")])
 
 
@@ -22,6 +22,7 @@
    [:a {:href "/update-item"} "Update item"]
    " ]"])
 
+
 (defn home-page
   []
   (hic-p/html5
@@ -29,6 +30,7 @@
    header-links
    [:h1 "Home"]
    [:p "Test-webapp"]))
+
 
 (defn all-items-page
   []
@@ -41,6 +43,7 @@
       [:tr [:th "id"] [:th "text"] [:th "next"]]
       (for [loc all-locs]
         [:tr [:td (:id loc)] [:td (:text loc)] [:td (:next loc)]])])))
+
 
 (defn add-items-page
   []

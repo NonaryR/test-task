@@ -42,17 +42,12 @@
   (first (select items
             (where (= :id id)))))
 
-;; (post-by-id 1)
-
-
 (defn update-item
   [id body]
   (if (post-by-id id)
     (update items
       (set-fields {:text body})
       (where (= :id id)))))
-
-; ;(update-item 4 "lolll")
 
 (defn insert-new-item
   [x y]
